@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DomoHouse</string>
+    <string name="app_version">0.1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="card_title">card</string>
+    <string name="card1_title">Dormitorio</string>
+    <string name="card2_title">Sala</string>
+    <string name="card3_title">Baño</string>
+    <string name="action_settings">Settings</string>
+</resources>

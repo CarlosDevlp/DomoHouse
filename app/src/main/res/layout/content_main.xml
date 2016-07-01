@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.carlos.domohouse.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Cartas que contienen partes de la casa -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card1"
+                android:background="@drawable/card_image1"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:id="@+id/card_image1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/card1_title"
+                    style="@style/card_title_style"
+                    android:text="@string/card1_title"/>
+                <!--Botones de los focos-->
+                <ToggleButton
+                    android:id="@+id/card_light_bulb1"
+                    style="@style/card_btn_light_bulb"
+                    />
+                <!--android:layout_marginTop="100dp"-->
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card3"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:id="@+id/card_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/card2_title"
+                    style="@style/card_title_style"
+                    android:text="@string/card2_title"/>
+                <!--Botones de los focos-->
+                <ToggleButton
+                    android:id="@+id/card_light_bulb2"
+                    style="@style/card_btn_light_bulb"
+                    />
+                <ToggleButton
+                    android:id="@+id/card_light_bulb3"
+                    style="@style/card_btn_light_bulb"
+                    android:layout_marginEnd="100dp"
+                    />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card2"
+                android:background="@drawable/card_image1"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="4dp">
+                <ImageView
+                    android:id="@+id/card_image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:id="@+id/card3_title"
+                    style="@style/card_title_style"
+                    android:text="@string/card3_title"/>
+                <!--Botones de los focos-->
+                <ToggleButton
+                    android:id="@+id/card_light_bulb4"
+                    style="@style/card_btn_light_bulb"
+                    />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
